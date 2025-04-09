@@ -2,11 +2,13 @@ body {
     font-family: Arial, sans-serif;
     padding: 20px;
     margin: 0;
-    background-color: #fff;
+    background-color: #d0f0ff; 
     text-align: center;
 }
 
 h1 {
+    text-align: center;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -42,13 +44,58 @@ h1 {
 }
 
 .card p {
-    font-size: 14px;
-    text-align: left;
     margin: 10px 0;
+}
+
+.serie-title {
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.serie-year {
+    font-style: italic;
+    color: #555;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 6px;
 }
 
 .card a {
     font-size: 13px;
     text-decoration: none;
     color: #007bff;
+}
+
+.like-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    max-width: 14px !important; 
+}
+
+.like-text {
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.liked .like-text {
+    color: #007bff;
+}
+
+.like-icon {
+    width: 14px !important;
+    height: 14px !important;
+    max-width: 14px !important; 
+    max-height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: contain;
+    flex-shrink: 0;
 }
